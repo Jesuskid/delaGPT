@@ -64,8 +64,9 @@ async function handleSubmit(e) {
   loader(messageDiv)
 
   //fetch data
+  // 'http://localhost:5000/post-request',
   const response = await fetch(
-    'http://localhost:5000/post-request',
+    'https://delagpt.onrender.com/post-request',
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
